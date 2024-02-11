@@ -1,0 +1,2248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(230, 230, 230);
+}
+
+ ::-webkit-scrollbar {
+    background: transparent;
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #9b9b9b;
+    height: 200px;
+    border-radius: 1rem;
+    transition: all 3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #2c2c2c;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+    width: 100%;
+    position: fixed;
+    height: 50px;
+    z-index: 10;
+}
+
+.header h2 {
+    color: #000;
+    left: 20px;
+    position: relative;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.nav button {
+    text-decoration: none;
+    color: #000;
+    margin-right: 20px;
+    background: transparent;
+    border: 2px solid transparent;
+    font-size: 16px
+}
+
+.content {
+    text-align: center;
+    padding: 80px; /* Adjust as needed */
+}
+
+.my-name {
+    color: #000;
+    font-size: 50px;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 200px;
+}
+
+.text {
+    text-align: center;
+    width: 550px;
+    top: 280px;
+    position: absolute;
+    display: flex;
+}
+
+.projects-btn {
+    background: rgb(255, 0, 0);
+    padding: 10px 25px;
+    border: 2px solid rgb(255, 0, 0);
+    color: #fff;
+    font-size: 16px;
+    border-radius: 3px;
+    top: 360px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+    position: absolute;
+}
+
+.projects-btn:hover {
+    padding: 15px 30px;
+}
+
+.get-know-me {
+    color: #000;
+    font-size: 24px;
+    position: absolute;
+    top: 700px;
+    left: 100px;
+}
+
+.get-know-me-text {
+    color: #000;
+    font: 1em;
+    position: absolute;
+    border: 2px solid rgb(230, 230, 230);
+    display: flex;
+    align-items: center;
+    top: 730px;
+    left: 100px;
+    width: 350px;
+    height: 100px;
+}
+
+.contact-btn {
+    background: rgb(255, 0, 0);
+    padding: 10px 25px;
+    border: 2px solid rgb(255, 0, 0);
+    color: #fff;
+    font-size: 16px;
+    border-radius: 3px;
+    top: 865px;
+    left: 100px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+    position: absolute;
+}
+
+.contact-btn:hover {
+    padding: 15px 30px;
+}
+
+.my-skils {
+    color: #000;
+    font-size: 24px;
+    position: absolute;
+    top: 700px;
+    right: 350px;
+}
+
+.html {
+    background: #bbbbbb;
+    border: 2px solid #bbbbbb;
+    position: absolute;
+    top: 735px;
+    color: #000;
+    display: flex;
+    padding: 5px;
+    border-radius: 5px;
+    right: 395px;
+    font-size: 13px;
+    text-decoration: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.css {
+    background: #bbbbbb;
+    border: 2px solid #bbbbbb;
+    position: absolute;
+    top: 735px;
+    color: #000;
+    display: flex;
+    padding: 5px;
+    border-radius: 5px;
+    right: 345px;
+    font-size: 13px;
+    text-decoration: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.javascript {
+    background: #bbbbbb;
+    border: 2px solid #bbbbbb;
+    position: absolute;
+    top: 735px;
+    color: #000;
+    display: flex;
+    padding: 5px;
+    border-radius: 5px;
+    right: 245px;
+    font-size: 13px;
+    text-decoration: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.git {
+    background: #bbbbbb;
+    border: 2px solid #bbbbbb;
+    position: absolute;
+    top: 735px;
+    color: #000;
+    display: flex;
+    padding: 5px;
+    border-radius: 5px;
+    right: 200px;
+    font-size: 13px;
+    text-decoration: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.wrapper {
+    background: #fff;
+    border: 2px solid #fff;
+    width: 350px;
+    height: 300px;
+    top: 2400px;
+    position: absolute;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .4);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper input {
+    font-size: 24px;
+    background: rgb(230, 230, 230);
+    border-color: transparent;
+    position: absolute;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .4);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+}
+
+.name {
+    top: 40px;
+}
+
+.email {
+    top: 100px;
+}
+
+.message {
+    top: 160px;
+}
+
+.submit-btn {
+    position: absolute;
+    top: 240px;
+    right: 10px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background: rgb(255, 0, 0);
+    border: 2px solid rgb(255, 0, 0);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    padding: 10px 20px;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, .4);
+}
+
+.text-input-name,
+.text-input-email,
+.text-input-message {
+    position: absolute;
+    color: #000;
+}
+
+
+.text-input-name {
+    top: 20px;
+}
+
+.text-input-email {
+    top: 80px;
+}
+
+.text-input-message {
+    top: 140px;
+}
+
+.project-1-wrapper {
+    position: absolute;
+    top: 1300px;
+    width: 900px;
+    border: 2px solid #fff;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .4);
+    height: 260px;
+}
+
+.project-1-wrapper img {
+    width: 402px;
+    height: 220.5px;
+    box-shadow: 1px 5px 7px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+.project-title {
+    position: absolute;
+    top: 1125px;
+    left: 424px;
+}
+
+.project-title-style {
+    height: 5px;
+    width: 30px;
+    position: absolute;
+    top: 1165px;
+    left: 475px;
+    background: rgb(201, 28, 253);
+    border: 2px solid rgb(201, 28, 253);
+    border-radius: 15px;
+}
+
+.project-text-1 {
+    height: 20px;
+    width: 580px;
+    position: absolute;
+    top: 1180px;
+    text-align: center;
+}
+
+.project-1-wrapper p {
+    width: 300px;
+    position: absolute;
+    right: 150px;
+    top: 53px;
+    text-decoration: none;
+    color: #000;
+}
+
+.project-1-wrapper button a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+} 
+
+.project-1-wrapper button {
+    background: rgb(255, 0, 0);
+    border: 2px solid rgb(255, 0, 0);
+    position: absolute;
+    top: 135px;
+    right: 335px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    color: #fff;
+}
+
+.project-1-wrapper button:hover {
+    background: #fff;
+    color: #000;
+}
+
+.project-1-wrapper h2 {
+    position: absolute;
+    right: 238px;
+    text-decoration: none;
+    top: 10px;
+}
+
+.project-2-wrapper {
+    position: absolute;
+    top: 1600px;
+    width: 900px;
+    border: 2px solid #fff;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .4);
+    height: 260px;
+}
+
+.project-2-wrapper img {
+    width: 402px;
+    height: 220.5px;
+    box-shadow: 1px 5px 7px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+.project-2-wrapper p {
+    width: 300px;
+    position: absolute;
+    right: 150px;
+    top: 53px;
+    text-decoration: none;
+    color: #000;
+}
+
+.project-2-wrapper button a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+} 
+
+.project-2-wrapper button {
+    background: rgb(255, 0, 0);
+    border: 2px solid rgb(255, 0, 0);
+    position: absolute;
+    top: 135px;
+    right: 335px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    color: #fff;
+}
+
+.project-2-wrapper button:hover {
+    background: #fff;
+    color: #000;
+}
+
+.project-2-wrapper h2 {
+    position: absolute;
+    right: 168px;
+    text-decoration: none;
+    top: 10px;
+}
+
+
+.project-3-wrapper {
+    position: absolute;
+    top: 1900px;
+    width: 900px;
+    border: 2px solid #fff;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .4);
+    height: 260px;
+}
+
+.project-3-wrapper img {
+    width: 402px;
+    height: 220.5px;
+    box-shadow: 1px 5px 7px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+.project-3-wrapper p {
+    width: 375px;
+    position: absolute;
+    right: 75px;
+    top: 53px;
+    text-decoration: none;
+    color: #000;
+}
+
+.project-3-wrapper button a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+} 
+
+.project-3-wrapper button {
+    background: rgb(255, 0, 0);
+    border: 2px solid rgb(255, 0, 0);
+    position: absolute;
+    top: 135px;
+    right: 335px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    color: #fff;
+}
+
+.project-3-wrapper button:hover {
+    background: #fff;
+    color: #000;
+}
+
+.project-3-wrapper h2 {
+    position: absolute;
+    right: 300px;
+    text-decoration: none;
+    top: 10px;
+}
+
+.contact-title {
+    position: absolute;
+    top: 2225px;
+    left: 454px;
+}
+
+.contact-title-style {
+    height: 5px;
+    width: 30px;
+    position: absolute;
+    top: 2265px;
+    left: 500px;
+    background: rgb(201, 28, 253);
+    border: 2px solid rgb(201, 28, 253);
+    border-radius: 15px;
+}
+
+.contact-text {
+    height: 20px;
+    width: 580px;
+    position: absolute;
+    top: 2280px;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    height: 300px;
+    background: #000;
+    position: absolute;
+    top: 3000px;
+}
+
+footer h2 {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    left: 100px;
+    top: 50px;
+}
+
+.footer-txt {
+    color: #fff;
+    left: 100px;
+    position: absolute;
+    width: 450px;
+    top: 95px;
+}
+
+.copyright {
+    color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 5px;
+    position: absolute;
+}
+
+.copyright-txt {
+    color: #fff;
+    font-size: 12px;
+}
+
+footer h1 {
+    color: #fff;
+    position: absolute;
+    top: 50px;
+    font-size: 18px;
+    right: 94px;
+    background: transparent;
+}
+
+.social {
+    color: #fff;
+    font-size: 17px;
+    background: transparent;
+    width: auto;
+    position: absolute;
+    right: 44px;
+    top: 85px;
+}
+
+.social button {
+    color: #fff;
+    background: transparent;
+    border: 2px solid transparent;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 320px) {
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+    
+    body {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(230, 230, 230);
+        overflow-x: hidden;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #fff;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+        width: 100%;
+        position: fixed;
+        height: 50px;
+        z-index: 10;
+    }
+
+    .header h2 {
+        color: #000;
+        left: 35px;
+        position: relative;
+        font-size: 1em;
+        text-decoration: none;
+    }
+
+    .my-name {
+        color: #000;
+        font-size: 20px;
+        margin-bottom: 20px;
+        position: absolute;
+        top: 130px;
+    }
+    
+    .nav button {
+        text-decoration: none;
+        color: #000;
+        margin-right: 20px;
+        background: transparent;
+        border: 2px solid transparent;
+        font-size: 16px;
+        display: none;
+    }
+
+    .text {
+        text-align: center;
+        width: 300px;
+        /* padding: 20px; */
+        top: 170px;
+        position: absolute;
+        display: flex;
+    }
+
+    .projects-btn {
+        background: rgb(255, 0, 0);
+        padding: 10px 25px;
+        border: 2px solid rgb(255, 0, 0);
+        color: #fff;
+        font-size: 14px;
+        border-radius: 3px;
+        top: 295px;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+        position: absolute;
+    }
+    
+    .projects-btn:hover {
+        padding: 15px 30px;
+    }
+
+    .get-know-me {
+        color: #000;
+        font-size: 18px;
+        position: absolute;
+        top: 450px;
+        left: 25px;
+    }
+    
+    .get-know-me-text {
+        color: #000;
+        font: 1em;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        top: 500px;
+        left: 25px;
+        width: 250px;
+    }
+    
+    .contact-btn {
+        background: rgb(255, 0, 0);
+        padding: 10px 25px;
+        border: 2px solid rgb(255, 0, 0);
+        color: #fff;
+        font-size: 14px;
+        border-radius: 3px;
+        top: 745px;
+        left: 26px;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+        position: absolute;
+    }
+    
+    .contact-btn:hover {
+        padding: 15px 30px;
+    }
+
+    .my-skils {
+        color: #000;
+        font-size: 18px;
+        position: absolute;
+        top: 650px;
+        left: 25px;
+        width: 100px;
+    }
+    
+    .html {
+        background: #bbbbbb;
+        border: 2px solid #bbbbbb;
+        position: absolute;
+        top: 685px;
+        color: #000;
+        display: flex;
+        padding: 5px;
+        border-radius: 5px;
+        right: 235px;
+        font-size: 13px;
+        text-decoration: none;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    }
+    
+    .css {
+        background: #bbbbbb;
+        border: 2px solid #bbbbbb;
+        position: absolute;
+        top: 685px;
+        color: #000;
+        display: flex;
+        padding: 5px;
+        border-radius: 5px;
+        right: 185px;
+        font-size: 13px;
+        text-decoration: none;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    }
+    
+    .javascript {
+        background: #bbbbbb;
+        border: 2px solid #bbbbbb;
+        position: absolute;
+        top: 685px;
+        color: #000;
+        display: flex;
+        padding: 5px;
+        border-radius: 5px;
+        right: 85px;
+        font-size: 13px;
+        text-decoration: none;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    }
+    
+    .git {
+        background: #bbbbbb;
+        border: 2px solid #bbbbbb;
+        position: absolute;
+        top: 685px;
+        color: #000;
+        display: flex;
+        padding: 5px;
+        border-radius: 5px;
+        right: 40px;
+        font-size: 13px;
+        text-decoration: none;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    }
+
+    .project-title {
+        position: absolute;
+        top: 850px;
+        left: 100px;
+    }
+    
+    .project-title-style {
+        height: 5px;
+        width: 30px;
+        position: absolute;
+        top: 890px;
+        left: 153px;
+        background: rgb(201, 28, 253);
+        border: 2px solid rgb(201, 28, 253);
+        border-radius: 15px;
+    }
+
+    .project-text-1 {
+        height: 20px;
+        width: 280px;
+        position: absolute;
+        top: 910px;
+        text-align: center;
+    }
+
+    .project-1-wrapper {
+        position: absolute;
+        top: 1100px;
+        width: 300px;
+        border: 2px solid #fff;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .4);
+        height: 350px;
+    }
+    
+    .project-1-wrapper img {
+        width: 286px;
+        height: 195.25px;
+        box-shadow: 1px 5px 7px rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 7.5px;
+        left: 5px;
+    }
+
+    .project-1-wrapper p {
+        width: 250px;
+        position: absolute;
+        left: 5px;
+        top: 215px;
+        text-decoration: none;
+        color: #000;
+        text-align: left;
+    }
+    
+    .project-1-wrapper button a {
+        text-decoration: none;
+        color: #fff;
+        transition: all 0.3s ease;
+    } 
+    
+    .project-1-wrapper button {
+        background: rgb(255, 0, 0);
+        border: 2px solid rgb(255, 0, 0);
+        position: absolute;
+        top: 300px;
+        right: 178px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: all 0.4s ease;
+        color: #fff;
+    }
+    
+    .project-1-wrapper button:hover {
+        background: #fff;
+        color: #000;
+    }
+    
+    .project-1-wrapper h2 {
+        position: absolute;
+        left: 35px;
+        text-decoration: none;
+        top: -40px;
+        width: 300px;
+    }
+
+    .project-2-wrapper {
+        position: absolute;
+        top: 1525px;
+        width: 300px;
+        border: 2px solid #fff;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .4);
+        height: 350px;
+    }
+    
+    .project-2-wrapper img {
+        width: 286px;
+        height: 195.25px;
+        box-shadow: 1px 5px 7px rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 7.5px;
+        left: 5px;
+    }
+
+    .project-2-wrapper p {
+        width: 250px;
+        position: absolute;
+        left: 5px;
+        top: 215px;
+        text-decoration: none;
+        color: #000;
+        text-align: left;
+    }
+    
+    .project-2-wrapper button a {
+        text-decoration: none;
+        color: #fff;
+        transition: all 0.3s ease;
+    } 
+    
+    .project-2-wrapper button {
+        background: rgb(255, 0, 0);
+        border: 2px solid rgb(255, 0, 0);
+        position: absolute;
+        top: 300px;
+        right: 178px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: all 0.4s ease;
+        color: #fff;
+    }
+    
+    .project-2-wrapper button:hover {
+        background: #fff;
+        color: #000;
+    }
+    
+    .project-2-wrapper h2 {
+        position: absolute;
+        left: 5px;
+        text-decoration: none;
+        top: -40px;
+        width: 300px;
+    }
+
+    .project-3-wrapper {
+        position: absolute;
+        top: 1950px;
+        width: 300px;
+        border: 2px solid #fff;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .4);
+        height: 350px;
+    }
+    
+    .project-3-wrapper img {
+        width: 286px;
+        height: 195.25px;
+        box-shadow: 1px 5px 7px rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 7.5px;
+        left: 5px;
+    }
+
+    .project-3-wrapper p {
+        width: 250px;
+        position: absolute;
+        left: 5px;
+        top: 215px;
+        text-decoration: none;
+        color: #000;
+        text-align: left;
+    }
+    
+    .project-3-wrapper button a {
+        text-decoration: none;
+        color: #fff;
+        transition: all 0.3s ease;
+    } 
+    
+    .project-3-wrapper button {
+        background: rgb(255, 0, 0);
+        border: 2px solid rgb(255, 0, 0);
+        position: absolute;
+        top: 300px;
+        right: 178px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: all 0.4s ease;
+        color: #fff;
+    }
+    
+    .project-3-wrapper button:hover {
+        background: #fff;
+        color: #000;
+    }
+    
+    .project-3-wrapper h2 {
+        position: absolute;
+        left: 70px;
+        text-decoration: none;
+        top: -40px;
+        width: 300px;
+    }
+
+    .contact-title {
+        position: absolute;
+        top: 2450px;
+        left: 95px;
+    }
+    
+    .contact-title-style {
+        height: 5px;
+        width: 30px;
+        position: absolute;
+        top: 2490px;
+        left: 142px;
+        background: rgb(201, 28, 253);
+        border: 2px solid rgb(201, 28, 253);
+        border-radius: 15px;
+    }
+    
+    .contact-text {
+        height: 20px;
+        width: 280px;
+        position: absolute;
+        top: 2510px;
+        text-align: center;
+    }
+
+    .wrapper {
+        background: #fff;
+        border: 2px solid #fff;
+        width: 350px;
+        height: 300px;
+        top: 2600px;
+        position: absolute;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, .4);
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .wrapper input {
+        font-size: 24px;
+        background: rgb(230, 230, 230);
+        border-color: transparent;
+        position: absolute;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, .4);
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .name {
+        top: 40px;
+    }
+    
+    .email {
+        top: 100px;
+    }
+    
+    .message {
+        top: 160px;
+    }
+    
+    .submit-btn {
+        position: absolute;
+        top: 240px;
+        right: 30px;
+        border-radius: 5px;
+        padding: 5px 10px;
+        background: rgb(255, 0, 0);
+        border: 2px solid rgb(255, 0, 0);
+        color: #fff;
+        transition: all 0.3s ease;
+    }
+    
+    .submit-btn:hover {
+        padding: 10px 20px;
+        box-shadow: 0 5px 6px rgba(0, 0, 0, .4);
+    }
+    
+    .text-input-name,
+    .text-input-email,
+    .text-input-message {
+        position: absolute;
+        color: #000;
+    }
+    
+    
+    .text-input-name {
+        top: 20px;
+    }
+    
+    .text-input-email {
+        top: 80px;
+    }
+    
+    .text-input-message {
+        top: 140px;
+    }
+
+    footer {
+        width: 100%;
+        height: 350px;
+        background: #000;
+        position: absolute;
+        top: 3050px;
+    }
+    
+    footer h2 {
+        color: #fff;
+        font-size: 18px;
+        position: absolute;
+        left: 37.615px;
+        top: 50px;
+    }
+    
+    .footer-txt {
+        color: #fff;
+        left: 37.615px;
+        position: absolute;
+        width: 250px;
+        top: 95px;
+    }
+    
+    .copyright {
+        color: #fff;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 5px;
+        position: absolute;
+    }
+    
+    .copyright-txt {
+        color: #fff;
+        font-size: 12px;
+    }
+    
+    footer h1 {
+        color: #fff;
+        position: absolute;
+        top: 200px;
+        font-size: 18px;
+        left: 37.615px;
+        background: transparent;
+    }
+    
+    .social {
+        color: #fff;
+        font-size: 17px;
+        background: transparent;
+        width: auto;
+        position: absolute;
+        left: 31px;
+        top: 230px;
+    }
+    
+    .social button {
+        color: #fff;
+        background: transparent;
+        border: 2px solid transparent;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+    
+    body {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(230, 230, 230);
+        overflow-x: hidden;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #fff;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+        width: 100%;
+        position: fixed;
+        height: 50px;
+        z-index: 10;
+    }
+
+    .header h2 {
+        color: #000;
+        left: 35px;
+        position: relative;
+        font-size: 1em;
+        text-decoration: none;
+    }
+
+    .my-name {
+        color: #000;
+        font-size: 20px;
+        margin-bottom: 20px;
+        position: absolute;
+        top: 130px;
+    }
+    
+    .nav button {
+        text-decoration: none;
+        color: #000;
+        margin-right: 20px;
+        background: transparent;
+        border: 2px solid transparent;
+        font-size: 16px;
+        display: none;
+    }
+
+    .text {
+        text-align: center;
+        width: 300px;
+        /* padding: 20px; */
+        top: 170px;
+        position: absolute;
+        display: flex;
+    }
+
+    .projects-btn {
+        background: rgb(255, 0, 0);
+        padding: 10px 25px;
+        border: 2px solid rgb(255, 0, 0);
+        color: #fff;
+        font-size: 14px;
+        border-radius: 3px;
+        top: 295px;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+        position: absolute;
+    }
+    
+    .projects-btn:hover {
+        padding: 15px 30px;
+    }
+
+    .get-know-me {
+        color: #000;
+        font-size: 18px;
+        position: absolute;
+        top: 450px;
+        left: 25px;
+    }
+    
+    .get-know-me-text {
+        color: #000;
+        font: 1em;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        top: 500px;
+        left: 25px;
+        width: 250px;
+    }
+    
+    .contact-btn {
+        background: rgb(255, 0, 0);
+        padding: 10px 25px;
+        border: 2px solid rgb(255, 0, 0);
+        color: #fff;
+        font-size: 14px;
+        border-radius: 3px;
+        top: 745px;
+        left: 26px;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+        position: absolute;
+    }
+    
+    .contact-btn:hover {
+        padding: 15px 30px;
+    }
+
+    .my-skils {
+        color: #000;
+        font-size: 18px;
+        position: absolute;
+        top: 650px;
+        left: 25px;
+        width: 100px;
+    }
+    
+    .html {
+        background: #bbbbbb;
+        border: 2px solid #bbbbbb;
+        position: absolute;
+        top: 685px;
+        color: #000;
+        display: flex;
+        padding: 5px;
+        border-radius: 5px;
+        right: 335px;
+        font-size: 13px;
+        text-decoration: none;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    }
+    
+    .css {
+        background: #bbbbbb;
+        border: 2px solid #bbbbbb;
+        position: absolute;
+        top: 685px;
+        color: #000;
+        display: flex;
+        padding: 5px;
+        border-radius: 5px;
+        right: 285px;
+        font-size: 13px;
+        text-decoration: none;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    }
+    
+    .javascript {
+        background: #bbbbbb;
+        border: 2px solid #bbbbbb;
+        position: absolute;
+        top: 685px;
+        color: #000;
+        display: flex;
+        padding: 5px;
+        border-radius: 5px;
+        right: 185px;
+        font-size: 13px;
+        text-decoration: none;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    }
+    
+    .git {
+        background: #bbbbbb;
+        border: 2px solid #bbbbbb;
+        position: absolute;
+        top: 685px;
+        color: #000;
+        display: flex;
+        padding: 5px;
+        border-radius: 5px;
+        right: 140px;
+        font-size: 13px;
+        text-decoration: none;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    }
+
+    .project-title {
+        position: absolute;
+        top: 850px;
+        left: 150px;
+    }
+    
+    .project-title-style {
+        height: 5px;
+        width: 30px;
+        position: absolute;
+        top: 890px;
+        left: 203px;
+        background: rgb(201, 28, 253);
+        border: 2px solid rgb(201, 28, 253);
+        border-radius: 15px;
+    }
+
+    .project-text-1 {
+        height: 20px;
+        width: 280px;
+        position: absolute;
+        top: 910px;
+        text-align: center;
+    }
+
+    .project-1-wrapper {
+        position: absolute;
+        top: 1100px;
+        width: 300px;
+        border: 2px solid #fff;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .4);
+        height: 350px;
+    }
+    
+    .project-1-wrapper img {
+        width: 286px;
+        height: 195.25px;
+        box-shadow: 1px 5px 7px rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 7.5px;
+        left: 5px;
+    }
+
+    .project-1-wrapper p {
+        width: 250px;
+        position: absolute;
+        left: 5px;
+        top: 215px;
+        text-decoration: none;
+        color: #000;
+        text-align: left;
+    }
+    
+    .project-1-wrapper button a {
+        text-decoration: none;
+        color: #fff;
+        transition: all 0.3s ease;
+    } 
+    
+    .project-1-wrapper button {
+        background: rgb(255, 0, 0);
+        border: 2px solid rgb(255, 0, 0);
+        position: absolute;
+        top: 300px;
+        right: 178px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: all 0.4s ease;
+        color: #fff;
+    }
+    
+    .project-1-wrapper button:hover {
+        background: #fff;
+        color: #000;
+    }
+    
+    .project-1-wrapper h2 {
+        position: absolute;
+        left: 35px;
+        text-decoration: none;
+        top: -40px;
+        width: 300px;
+    }
+
+    .project-2-wrapper {
+        position: absolute;
+        top: 1525px;
+        width: 300px;
+        border: 2px solid #fff;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .4);
+        height: 350px;
+    }
+    
+    .project-2-wrapper img {
+        width: 286px;
+        height: 195.25px;
+        box-shadow: 1px 5px 7px rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 7.5px;
+        left: 5px;
+    }
+
+    .project-2-wrapper p {
+        width: 250px;
+        position: absolute;
+        left: 5px;
+        top: 215px;
+        text-decoration: none;
+        color: #000;
+        text-align: left;
+    }
+    
+    .project-2-wrapper button a {
+        text-decoration: none;
+        color: #fff;
+        transition: all 0.3s ease;
+    } 
+    
+    .project-2-wrapper button {
+        background: rgb(255, 0, 0);
+        border: 2px solid rgb(255, 0, 0);
+        position: absolute;
+        top: 300px;
+        right: 178px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: all 0.4s ease;
+        color: #fff;
+    }
+    
+    .project-2-wrapper button:hover {
+        background: #fff;
+        color: #000;
+    }
+    
+    .project-2-wrapper h2 {
+        position: absolute;
+        left: 5px;
+        text-decoration: none;
+        top: -40px;
+        width: 300px;
+    }
+
+    .project-3-wrapper {
+        position: absolute;
+        top: 1950px;
+        width: 300px;
+        border: 2px solid #fff;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .4);
+        height: 350px;
+    }
+    
+    .project-3-wrapper img {
+        width: 286px;
+        height: 195.25px;
+        box-shadow: 1px 5px 7px rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 7.5px;
+        left: 5px;
+    }
+
+    .project-3-wrapper p {
+        width: 250px;
+        position: absolute;
+        left: 5px;
+        top: 215px;
+        text-decoration: none;
+        color: #000;
+        text-align: left;
+    }
+    
+    .project-3-wrapper button a {
+        text-decoration: none;
+        color: #fff;
+        transition: all 0.3s ease;
+    } 
+    
+    .project-3-wrapper button {
+        background: rgb(255, 0, 0);
+        border: 2px solid rgb(255, 0, 0);
+        position: absolute;
+        top: 300px;
+        right: 178px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: all 0.4s ease;
+        color: #fff;
+    }
+    
+    .project-3-wrapper button:hover {
+        background: #fff;
+        color: #000;
+    }
+    
+    .project-3-wrapper h2 {
+        position: absolute;
+        left: 70px;
+        text-decoration: none;
+        top: -40px;
+        width: 300px;
+    }
+
+    .contact-title {
+        position: absolute;
+        top: 2450px;
+        left: 150px;
+    }
+    
+    .contact-title-style {
+        height: 5px;
+        width: 30px;
+        position: absolute;
+        top: 2490px;
+        left: 197px;
+        background: rgb(201, 28, 253);
+        border: 2px solid rgb(201, 28, 253);
+        border-radius: 15px;
+    }
+    
+    .contact-text {
+        height: 20px;
+        width: 280px;
+        position: absolute;
+        top: 2510px;
+        text-align: center;
+    }
+
+    .wrapper {
+        background: #fff;
+        border: 2px solid #fff;
+        width: 350px;
+        height: 300px;
+        top: 2600px;
+        position: absolute;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, .4);
+        border-radius: 5px;
+        display: flex;
+        left: 35px;
+        justify-content: center;
+    }
+    
+    .wrapper input {
+        font-size: 24px;
+        background: rgb(230, 230, 230);
+        border-color: transparent;
+        position: absolute;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, .4);
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .name {
+        top: 40px;
+    }
+    
+    .email {
+        top: 100px;
+    }
+    
+    .message {
+        top: 160px;
+    }
+    
+    .submit-btn {
+        position: absolute;
+        top: 240px;
+        right: 30px;
+        border-radius: 5px;
+        padding: 5px 10px;
+        background: rgb(255, 0, 0);
+        border: 2px solid rgb(255, 0, 0);
+        color: #fff;
+        transition: all 0.3s ease;
+    }
+    
+    .submit-btn:hover {
+        padding: 10px 20px;
+        box-shadow: 0 5px 6px rgba(0, 0, 0, .4);
+    }
+    
+    .text-input-name,
+    .text-input-email,
+    .text-input-message {
+        position: absolute;
+        color: #000;
+    }
+    
+    
+    .text-input-name {
+        top: 20px;
+    }
+    
+    .text-input-email {
+        top: 80px;
+    }
+    
+    .text-input-message {
+        top: 140px;
+    }
+
+    footer {
+        width: 100%;
+        height: 350px;
+        background: #000;
+        position: absolute;
+        top: 3050px;
+    }
+    
+    footer h2 {
+        color: #fff;
+        font-size: 18px;
+        position: absolute;
+        left: 37.615px;
+        top: 50px;
+    }
+    
+    .footer-txt {
+        color: #fff;
+        left: 37.615px;
+        position: absolute;
+        width: 250px;
+        top: 95px;
+    }
+    
+    .copyright {
+        color: #fff;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 5px;
+        position: absolute;
+    }
+    
+    .copyright-txt {
+        color: #fff;
+        font-size: 12px;
+    }
+    
+    footer h1 {
+        color: #fff;
+        position: absolute;
+        top: 200px;
+        font-size: 18px;
+        left: 37.615px;
+        background: transparent;
+    }
+    
+    .social {
+        color: #fff;
+        font-size: 17px;
+        background: transparent;
+        width: auto;
+        position: absolute;
+        left: 31px;
+        top: 230px;
+    }
+    
+    .social button {
+        color: #fff;
+        background: transparent;
+        border: 2px solid transparent;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+    
+    body {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(230, 230, 230);
+        overflow-x: hidden;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #fff;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+        width: 100%;
+        position: fixed;
+        height: 50px;
+        z-index: 10;
+    }
+
+    .header h2 {
+        color: #000;
+        left: 35px;
+        position: relative;
+        font-size: 1em;
+        text-decoration: none;
+    }
+
+    .my-name {
+        color: #000;
+        font-size: 20px;
+        margin-bottom: 20px;
+        position: absolute;
+        top: 130px;
+    }
+    
+    .nav button {
+        text-decoration: none;
+        color: #000;
+        margin-right: 20px;
+        background: transparent;
+        border: 2px solid transparent;
+        font-size: 16px;
+        display: none;
+    }
+
+    .text {
+        text-align: center;
+        width: 300px;
+        /* padding: 20px; */
+        top: 170px;
+        position: absolute;
+        display: flex;
+    }
+
+    .projects-btn {
+        background: rgb(255, 0, 0);
+        padding: 10px 25px;
+        border: 2px solid rgb(255, 0, 0);
+        color: #fff;
+        font-size: 14px;
+        border-radius: 3px;
+        top: 295px;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+        position: absolute;
+    }
+    
+    .projects-btn:hover {
+        padding: 15px 30px;
+    }
+
+    .get-know-me {
+        color: #000;
+        font-size: 18px;
+        position: absolute;
+        top: 450px;
+        left: 25px;
+    }
+    
+    .get-know-me-text {
+        color: #000;
+        font: 1em;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        top: 500px;
+        left: 25px;
+        width: 250px;
+    }
+    
+    .contact-btn {
+        background: rgb(255, 0, 0);
+        padding: 10px 25px;
+        border: 2px solid rgb(255, 0, 0);
+        color: #fff;
+        font-size: 14px;
+        border-radius: 3px;
+        top: 745px;
+        left: 26px;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+        position: absolute;
+    }
+    
+    .contact-btn:hover {
+        padding: 15px 30px;
+    }
+
+    .my-skils {
+        color: #000;
+        font-size: 18px;
+        position: absolute;
+        top: 650px;
+        left: 25px;
+        width: 100px;
+    }
+    
+    .html {
+        background: #bbbbbb;
+        border: 2px solid #bbbbbb;
+        position: absolute;
+        top: 685px;
+        color: #000;
+        display: flex;
+        padding: 5px;
+        border-radius: 5px;
+        right: 295px;
+        font-size: 13px;
+        text-decoration: none;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    }
+    
+    .css {
+        background: #bbbbbb;
+        border: 2px solid #bbbbbb;
+        position: absolute;
+        top: 685px;
+        color: #000;
+        display: flex;
+        padding: 5px;
+        border-radius: 5px;
+        right: 245px;
+        font-size: 13px;
+        text-decoration: none;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    }
+    
+    .javascript {
+        background: #bbbbbb;
+        border: 2px solid #bbbbbb;
+        position: absolute;
+        top: 685px;
+        color: #000;
+        display: flex;
+        padding: 5px;
+        border-radius: 5px;
+        right: 145px;
+        font-size: 13px;
+        text-decoration: none;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    }
+    
+    .git {
+        background: #bbbbbb;
+        border: 2px solid #bbbbbb;
+        position: absolute;
+        top: 685px;
+        color: #000;
+        display: flex;
+        padding: 5px;
+        border-radius: 5px;
+        right: 100px;
+        font-size: 13px;
+        text-decoration: none;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    }
+
+    .project-title {
+        position: absolute;
+        top: 850px;
+        left: 120px;
+    }
+    
+    .project-title-style {
+        height: 5px;
+        width: 30px;
+        position: absolute;
+        top: 890px;
+        left: 173px;
+        background: rgb(201, 28, 253);
+        border: 2px solid rgb(201, 28, 253);
+        border-radius: 15px;
+    }
+
+    .project-text-1 {
+        height: 20px;
+        width: 280px;
+        position: absolute;
+        top: 910px;
+        text-align: center;
+    }
+
+    .project-1-wrapper {
+        position: absolute;
+        top: 1100px;
+        width: 300px;
+        border: 2px solid #fff;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .4);
+        height: 350px;
+    }
+    
+    .project-1-wrapper img {
+        width: 286px;
+        height: 195.25px;
+        box-shadow: 1px 5px 7px rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 7.5px;
+        left: 5px;
+    }
+
+    .project-1-wrapper p {
+        width: 250px;
+        position: absolute;
+        left: 5px;
+        top: 215px;
+        text-decoration: none;
+        color: #000;
+        text-align: left;
+    }
+    
+    .project-1-wrapper button a {
+        text-decoration: none;
+        color: #fff;
+        transition: all 0.3s ease;
+    } 
+    
+    .project-1-wrapper button {
+        background: rgb(255, 0, 0);
+        border: 2px solid rgb(255, 0, 0);
+        position: absolute;
+        top: 300px;
+        right: 178px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: all 0.4s ease;
+        color: #fff;
+    }
+    
+    .project-1-wrapper button:hover {
+        background: #fff;
+        color: #000;
+    }
+    
+    .project-1-wrapper h2 {
+        position: absolute;
+        left: 35px;
+        text-decoration: none;
+        top: -40px;
+        width: 300px;
+    }
+
+    .project-2-wrapper {
+        position: absolute;
+        top: 1525px;
+        width: 300px;
+        border: 2px solid #fff;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .4);
+        height: 350px;
+    }
+    
+    .project-2-wrapper img {
+        width: 286px;
+        height: 195.25px;
+        box-shadow: 1px 5px 7px rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 7.5px;
+        left: 5px;
+    }
+
+    .project-2-wrapper p {
+        width: 250px;
+        position: absolute;
+        left: 5px;
+        top: 215px;
+        text-decoration: none;
+        color: #000;
+        text-align: left;
+    }
+    
+    .project-2-wrapper button a {
+        text-decoration: none;
+        color: #fff;
+        transition: all 0.3s ease;
+    } 
+    
+    .project-2-wrapper button {
+        background: rgb(255, 0, 0);
+        border: 2px solid rgb(255, 0, 0);
+        position: absolute;
+        top: 300px;
+        right: 178px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: all 0.4s ease;
+        color: #fff;
+    }
+    
+    .project-2-wrapper button:hover {
+        background: #fff;
+        color: #000;
+    }
+    
+    .project-2-wrapper h2 {
+        position: absolute;
+        left: 5px;
+        text-decoration: none;
+        top: -40px;
+        width: 300px;
+    }
+
+    .project-3-wrapper {
+        position: absolute;
+        top: 1950px;
+        width: 300px;
+        border: 2px solid #fff;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .4);
+        height: 350px;
+    }
+    
+    .project-3-wrapper img {
+        width: 286px;
+        height: 195.25px;
+        box-shadow: 1px 5px 7px rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 7.5px;
+        left: 5px;
+    }
+
+    .project-3-wrapper p {
+        width: 250px;
+        position: absolute;
+        left: 5px;
+        top: 215px;
+        text-decoration: none;
+        color: #000;
+        text-align: left;
+    }
+    
+    .project-3-wrapper button a {
+        text-decoration: none;
+        color: #fff;
+        transition: all 0.3s ease;
+    } 
+    
+    .project-3-wrapper button {
+        background: rgb(255, 0, 0);
+        border: 2px solid rgb(255, 0, 0);
+        position: absolute;
+        top: 300px;
+        right: 178px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: all 0.4s ease;
+        color: #fff;
+    }
+    
+    .project-3-wrapper button:hover {
+        background: #fff;
+        color: #000;
+    }
+    
+    .project-3-wrapper h2 {
+        position: absolute;
+        left: 70px;
+        text-decoration: none;
+        top: -40px;
+        width: 300px;
+    }
+
+    .contact-title {
+        position: absolute;
+        top: 2450px;
+        left: 130px;
+    }
+    
+    .contact-title-style {
+        height: 5px;
+        width: 30px;
+        position: absolute;
+        top: 2490px;
+        left: 177px;
+        background: rgb(201, 28, 253);
+        border: 2px solid rgb(201, 28, 253);
+        border-radius: 15px;
+    }
+    
+    .contact-text {
+        height: 20px;
+        width: 280px;
+        position: absolute;
+        top: 2510px;
+        text-align: center;
+    }
+
+    .wrapper {
+        background: #fff;
+        border: 2px solid #fff;
+        width: 350px;
+        height: 300px;
+        top: 2600px;
+        position: absolute;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, .4);
+        border-radius: 5px;
+        display: flex;
+        left: 25px;
+        justify-content: center;
+    }
+    
+    .wrapper input {
+        font-size: 24px;
+        background: rgb(230, 230, 230);
+        border-color: transparent;
+        position: absolute;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, .4);
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .name {
+        top: 40px;
+    }
+    
+    .email {
+        top: 100px;
+    }
+    
+    .message {
+        top: 160px;
+    }
+    
+    .submit-btn {
+        position: absolute;
+        top: 240px;
+        right: 30px;
+        border-radius: 5px;
+        padding: 5px 10px;
+        background: rgb(255, 0, 0);
+        border: 2px solid rgb(255, 0, 0);
+        color: #fff;
+        transition: all 0.3s ease;
+    }
+    
+    .submit-btn:hover {
+        padding: 10px 20px;
+        box-shadow: 0 5px 6px rgba(0, 0, 0, .4);
+    }
+    
+    .text-input-name,
+    .text-input-email,
+    .text-input-message {
+        position: absolute;
+        color: #000;
+    }
+    
+    
+    .text-input-name {
+        top: 20px;
+    }
+    
+    .text-input-email {
+        top: 80px;
+    }
+    
+    .text-input-message {
+        top: 140px;
+    }
+
+    footer {
+        width: 100%;
+        height: 350px;
+        background: #000;
+        position: absolute;
+        top: 3050px;
+    }
+    
+    footer h2 {
+        color: #fff;
+        font-size: 18px;
+        position: absolute;
+        left: 37.615px;
+        top: 50px;
+    }
+    
+    .footer-txt {
+        color: #fff;
+        left: 37.615px;
+        position: absolute;
+        width: 250px;
+        top: 95px;
+    }
+    
+    .copyright {
+        color: #fff;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 5px;
+        position: absolute;
+    }
+    
+    .copyright-txt {
+        color: #fff;
+        font-size: 12px;
+    }
+    
+    footer h1 {
+        color: #fff;
+        position: absolute;
+        top: 200px;
+        font-size: 18px;
+        left: 37.615px;
+        background: transparent;
+    }
+    
+    .social {
+        color: #fff;
+        font-size: 17px;
+        background: transparent;
+        width: auto;
+        position: absolute;
+        left: 31px;
+        top: 230px;
+    }
+    
+    .social button {
+        color: #fff;
+        background: transparent;
+        border: 2px solid transparent;
+        font-size: 17px;
+    }
+}
+
